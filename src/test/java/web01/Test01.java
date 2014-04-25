@@ -11,5 +11,13 @@ public class Test01 {
 	public void test01() {
 		SecurityCheck.check();
 	}
+	
+	// 测试非静态内部类
+	@Test
+	public void test02() {
+		ClassOuter out = new ClassOuter();
+		ClassOuter.ClassInner inner  =  out.new ClassInner();
+		inner.method1();
+	}
 
 }

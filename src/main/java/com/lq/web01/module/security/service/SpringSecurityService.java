@@ -2,13 +2,14 @@ package com.lq.web01.module.security.service;
 
 import javax.annotation.Resource;
 
+import org.springframework.security.web.access.intercept.FilterSecurityInterceptor;
 import org.springframework.stereotype.Service;
 
 import com.lq.web01.platform.log.LQLogger;
 import com.lq.web01.platform.log.LQLoggerFactory;
 
 /**
- * Spring Securityr授权服务
+ * Spring Security授权服务
  * @author Administrator
  *
  */
