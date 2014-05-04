@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.lq.web01.platform.log.LQLogger;
 import com.lq.web01.platform.log.LQLoggerFactory;
+import com.lq.web01.platform.service.ServiceFacade;
 
 /**
  * Spring Security授权服务
@@ -19,5 +20,6 @@ public class SpringSecurityService {
 			.getLogger(SpringSecurityService.class);
 	@Resource(name = "filterSecurityInterceptor")
 	private FilterSecurityInterceptor fileterSecurityInterceptor;
+	protected ServiceFacade serviceFacade;
 
 }
